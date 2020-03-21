@@ -17,7 +17,7 @@ You can put them in another file as modules.
 Tests use functions of answers as modules (via import).  
 Tests is printing results when running.
 
-Files with upload suffix contains additional code.  
+Files with upload-suffix contains additional code.  
 The code is able to get some input data and give some output data (via print).  
 Using a good editor (like PyCharm), you can collapse a whole function in one line.  
 It's much easier to read an additional code this way.
