@@ -1,4 +1,4 @@
-import lecture_12_task_B_energy_game as task_B
+import L12_task_B_energy_game as task_B
 
 print('\n', 'Testing the tasks of Lecture 12:', '\n', sep='')
 

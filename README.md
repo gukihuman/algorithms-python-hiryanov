@@ -26,6 +26,6 @@ Some tasks are visual, e.g. tasks of 'Turtle' from Lecture 01.
 There is no written tests for it.  
 Just run the files and look at the result.
 
-Names of the files inside lectures-directories always starts from the number of lecture.  
+Names of the files inside lectures-directories always starts from the number of a lecture.  
 It has been made for a better navigate purpose.  
 Becouse sometimes files from different lectures are opened at the same time.
