@@ -40,7 +40,7 @@ def energy_game(platforms, length=None):
         if platforms[i] is max(platforms[i], platforms[i - 1]):
             higher = platforms[i]
             lower = platforms[i - 1]
-        else: # platforms[i - 1] is max(platforms[i], platforms[i - 1]):
+        else:  # platforms[i - 1] is max(platforms[i], platforms[i - 1]):
             higher = platforms[i - 1]
             lower = platforms[i]
         difference_previous = higher - lower
@@ -51,7 +51,7 @@ def energy_game(platforms, length=None):
         if platforms[i] is max(platforms[i], platforms[i - 2]):
             higher = platforms[i]
             lower = platforms[i - 2]
-        else: # platforms[i - 2] is max(platforms[i], platforms[i - 2]):
+        else:  # platforms[i - 2] is max(platforms[i], platforms[i - 2]):
             higher = platforms[i - 2]
             lower = platforms[i]
         difference_through_one = 3 * (higher - lower)
@@ -64,7 +64,7 @@ def energy_game(platforms, length=None):
         # in summary list in a new position.
         if option_1 < option_2:
             summary.append(option_1)
-        else: # option_1 >= option_2:
+        else:  # option_1 >= option_2:
             summary.append(option_2)
 
     # Returns the minimum amount of energy to get to the last platform.
