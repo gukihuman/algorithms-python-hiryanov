@@ -1,7 +1,7 @@
 def hypotenuse(a, b):
     """
-    Finds a hypotenuse from two other sides (legs) of a triangle using
-    Pythagorean theorem.
+    Finds a hypotenuse from two other sides (legs) of a triangle
+    using Pythagorean theorem.
 
     :param a: length of the first leg
     :param b: length of the second leg
