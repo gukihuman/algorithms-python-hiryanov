@@ -1,4 +1,4 @@
-import lecture_01_task_01 as task_01
+import lecture_01_task_01_hypotenuse as task_01
 
 def test_lecture_01_task_01():
     print('Task 01:')
