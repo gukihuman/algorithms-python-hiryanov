@@ -1,4 +1,4 @@
-import lecture_01_task_01_hypotenuse as task_01
+import L01_task_01_hypotenuse as task_01
 
 print('\n', 'Testing the tasks of Lecture 01:', '\n', sep='')
 
