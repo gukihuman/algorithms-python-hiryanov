@@ -13,7 +13,7 @@ legs = 12
 # Calculates an angle between two closest legs.
 angle = 360 / legs
 
-# Initializes a cycle with the number of iterations equals legs.
+# Initializes a cycle with amount of iterations equals legs.
 for i in range(legs):
 
 	# This is main turn.

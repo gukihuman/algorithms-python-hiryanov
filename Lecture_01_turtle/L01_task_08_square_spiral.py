@@ -18,7 +18,7 @@ for i in range(40):
 	turtle.forward(lenght)
 	turtle.left(90)
 
-	# Increases the length of a line each iteration.
+	# Increases the length of the line each iteration.
 	lenght += 5
 
 # Stops the turtle so you can see the result.

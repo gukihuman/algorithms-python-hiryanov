@@ -7,13 +7,13 @@ import turtle
 # Makes the cursor looks like turtle.
 turtle.shape('turtle')
 
-# Set a length of starting mini-line.
+# Sets a length of starting mini-line.
 lenght = 1
 
 # Initializes a cycle with 300 iterations.
 for i in range(300):
 
-	# Draws a mini-line using the new length
+	# Draws a mini-line using the new length.
 	# and turn to the left by 10 degrees.
 	turtle.forward(lenght)
 	turtle.left(10)
