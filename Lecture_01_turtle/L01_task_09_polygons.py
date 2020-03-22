@@ -42,15 +42,15 @@ def polygon(sides, radius):
 	# being ready for next actions.
 	turtle.right((angle / 2) + 90)
 
-# Sets a radius of the circumscribed circle of the first polygon
-radius = 30
-
 # Sets an amount of sides of the first polygon.
 sides = 3
 
+# Sets a radius of the circumscribed circle of the first polygon
+radius = 30
+
 # Sets an indent after drawing a polygon and before starting to draw
 # a next polygon. Uses the first radius value to avoid interceptions.
-# Indent is fixed and
+# Indent is fixed and will not be changed.
 indent = radius * 0.7
 
 # Initializes a cycle with 10 iterations for each polygon.
