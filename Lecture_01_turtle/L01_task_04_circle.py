@@ -7,8 +7,10 @@ import turtle
 # Makes the cursor looks like turtle.
 turtle.shape('turtle')
 
-# Moves to draw a circle.
+# Initializes a cycle with 360 iterations.
 for i in range(360):
+
+	# Draws a mini-line and turn to the left by one degree.
 	turtle.forward(1)
 	turtle.left(1)
 

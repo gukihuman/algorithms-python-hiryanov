@@ -29,7 +29,7 @@ for i in range(10):
 	turtle.goto(x, y)
 	turtle.pendown()
 
-	# Moves to draw a square using a new length each iteration.
+	# Draws a square using a new length each iteration.
 	for k in range(4):
 		turtle.forward(length)
 		turtle.left(90)

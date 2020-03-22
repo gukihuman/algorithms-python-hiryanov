@@ -7,8 +7,10 @@ import turtle
 # Makes the cursor looks like turtle.
 turtle.shape('turtle')
 
-# Moves to draw a square.
+# Initializes a cycle with 4 iterations.
 for i in range(4):
+
+	# Draws a line and turn to the left by 90 degrees.
 	turtle.forward(80)
 	turtle.left(90)
 

@@ -17,11 +17,12 @@ You can put them in another file as module.
 Tests use answers as modules (via import).  
 Tests is printing results when running.
 
-But answers from the first lecture aren't written as functions.  
+Though, answers from the first lecture aren't written as functions.  
 It's been made for the better understanding by novices.  
-Also the answers from the first lecture don't have tests.  
-The tasks are visual and you need to run the main code to see the result.  
-There is some tasks in the course which are visual also and don't have tests as well.
+All tasks in the lecture (except first one) are visual.  
+You need to run the code to see the result.  
+So there is no tests for the first lecture's code.  
+Some other tasks in the course are visual also and don't have tests as well.
 
 Sometimes files from different lectures are opened at the same time.  
 Names of files starts from the number of the lecture, e.g. "L01".  
