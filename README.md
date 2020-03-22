@@ -7,25 +7,28 @@ The site with [all tasks](http://judge.mipt.ru/mipt_cs_on_python3/).
 ***
 >Features:
 - Tests for most of the answers.
-- Every contest-answer has separated file with additional code for an upload purpose.
-- Every answer has detailed description of the task (as a comment inside code).
+- Every answer from contest has a separated file with additional code for the upload purpose.
+- Every answer has a detailed description of the task (as a comment inside code).
 
 >Some explanations:
 
-Most of the answers is written as functions.  
-You can put them in another file as modules.  
-Tests use functions of answers as modules (via import).  
+Most of the answers are written as functions.  
+You can put them in another file as module.  
+Tests use answers as modules (via import).  
 Tests is printing results when running.
 
-Files with upload-suffix contains additional code.  
-The code is able to get some input data and give some output data (via print).  
-Using a good editor (like PyCharm), you can collapse a whole function in one line.  
-It's much easier to read an additional code this way.
+But answers from the first lecture aren't written as functions.  
+It's been made for the better understanding by novices.  
+Also the answers from the first lecture don't have tests.  
+The tasks are visual and you need to run the main code to see the result.  
+There is some tasks in the course which are visual also and don't have tests as well.
 
-Some tasks are visual, e.g. tasks of 'Turtle' from Lecture 01.  
-There is no written tests for it.  
-Just run the files and look at the result.
+Sometimes files from different lectures are opened at the same time.  
+Names of files starts from the number of the lecture, e.g. "L01".  
+It's been made for the better navigate purpose.
 
-Names of the files inside lectures-directories always starts from the number of a lecture.  
-It has been made for a better navigate purpose.  
-Becouse sometimes files from different lectures are opened at the same time.
+Files with upload-suffix have been written to send it in the course-testing site.  
+This files contains additional code below the main.  
+This code is able to get some input data and give some output data (via print).  
+Using a good editor (like the PyCharm), you can collapse a whole function in one line.  
+It's much easier to read additional code this way.

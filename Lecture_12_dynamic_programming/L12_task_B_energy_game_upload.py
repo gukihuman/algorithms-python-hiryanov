@@ -70,6 +70,7 @@ def energy_game(platforms, length=None):
     # Returns the minimum amount of energy to get to the last platform.
     return summary[-1]
 
+
 # Input format:
 # The first line shows the number of platforms (0 < n <= 30000).
 # Next, the height of all platforms by one on an each line
