@@ -25,7 +25,7 @@ def polygon(sides, radius):
 	# using the tricky formula of circumscribed circle.
 	angle_radians = math.radians(angle / 2)
 	sinus = math.sin(angle_radians)
-	length = 2 * (radius * sinus)
+	length = (radius * sinus) * 2
 
 	# Turns to the left before the drawings to take the correct
 	# starting position.

@@ -1,5 +1,5 @@
 """
-Draws a circle.
+Draws a circle. In fact, the circle is just a high quality polygon.
 """
 
 import turtle
