@@ -1,5 +1,6 @@
 """
-Draws a flower by 6 circles.
+Draws a butterfly by 20 circles where two circles are opposite
+to each other. In each side the next circle is getting bigger.
 In fact, the circles are just a high quality polygons.
 """
 
@@ -60,20 +61,23 @@ sides = 45
 
 # Sets a length of a side of a polygon. The more sides,
 # the less a length should be.
-length = 7
+length = 5
 
 # Sets the angle of a turn between sides.
 angle = 360 / sides
 
-# Initializes a cycle with 3 iterations.
-for i in range(3):
+# Turns to the left by 90 degrees.
+turtle.left(90)
+
+# Initializes a cycle with 10 iterations.
+for i in range(10):
 
 	# Draws two circles opposite to each other.
 	circle_left(length, angle)
 	circle_right(length, angle)
 
-	# Turns to the left by 60 degrees.
-	turtle.left(60)
+	# Increase the length of the sides.
+	length += 1
 
 # Stops the turtle so you can see the result.
 turtle.mainloop()
