@@ -11,8 +11,8 @@ turtle.shape('turtle')
 
 def polygon(sides, radius):
 	"""
-	Draws a polygon using an amount of sides and the radius of
-	the circumscribed circle of the polygon.
+	Draws a polygon to the left using an amount of sides and
+	the radius of the circumscribed circle of the polygon.
 
 	:param sides: an amount of sides
 	:param radius: a radius of circumscribed circle
@@ -29,18 +29,17 @@ def polygon(sides, radius):
 
 	# Turns to the left before the drawings to take the correct
 	# starting position.
-	turtle.left((angle / 2) + 90)
+	turtle.left(angle / 2)
 
 	# Initializes a cycle with amount of iterations equals amount of sides.
-	for x in range(sides):
+	for i in range(sides):
 
 		# Draws a line and turn to the left by the value of the main angle.
 		turtle.forward(length)
 		turtle.left(angle)
 
-	# Turns to the right after the drawings to make the alignment and
-	# being ready for next actions.
-	turtle.right((angle / 2) + 90)
+	# Turns to the right after the drawings to make the alignment.
+	turtle.right(angle / 2)
 
 # Sets an amount of sides of the first polygon.
 sides = 3
@@ -56,9 +55,15 @@ indent = radius * 0.7
 # Initializes a cycle with 10 iterations for each polygon.
 for y in range(10):
 
+	# Turns to the left by 90 degrees.
+	turtle.left(90)
+
 	# Draws a polygon using an amount of sides and the radius of
 	# the circumscribed circle of the polygon.
 	polygon(sides, radius)
+
+	# Turns to the right by 90 degrees.
+	turtle.right(90)
 
 	# Disables drawing and makes an indent. Then enable drawing again.
 	turtle.penup()

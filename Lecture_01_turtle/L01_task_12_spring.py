@@ -9,6 +9,9 @@ import turtle
 # Makes the cursor looks like turtle.
 turtle.shape('turtle')
 
+# Instead of using a function which uses length and angle, it could be
+# a function which uses radius. But this will use additional
+# calculations (as in task 09). It's not necessary in this task.
 def half_circle(length, angle):
 	"""
 	Draws a half of a circle to the right. In fact, the half of
@@ -36,14 +39,14 @@ def half_circle(length, angle):
 # the more accurate the half of a circle will be.
 sides = 20
 
+# Sets the angle of a turn between sides.
+angle = 180 / sides
+
 # Sets lengths of sides of the halves of the polygons. The more sides,
 # the less a length should be. The big length is for a big half of
 # a circle, the small one is for a small half of a circle.
 length_big = 6
 length_small = 1.2
-
-# Sets the angle of a turn between sides.
-angle = 180 / sides
 
 # Turns to the left by 90 degrees. Taking the starting positon.
 turtle.left(90)
