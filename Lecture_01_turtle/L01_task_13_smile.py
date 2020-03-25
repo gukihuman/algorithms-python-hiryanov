@@ -18,12 +18,13 @@ turtle.shape('turtle')
 
 # This function will be used to draw a circle by using
 # a high amount of sides of a polygon. Also it uses radius
-# for better positioning of all the figures.
+# for better positioning of all the figures. It was used in
+# the task 09, but here is type-parameter added.
 def polygon(sides, radius, type=360):
 	"""
 	Draws a polygon to the left using an amount of sides and
 	the radius of the circumscribed circle of the polygon.
-	Default type is full (360).
+	Default type is a full closed polygon (360).
 
 	:param sides: an amount of sides
 	:param radius: a radius of circumscribed circle

@@ -19,7 +19,7 @@ Tests is printing results when running.
 
 Though, first answers from the first lecture aren't written as functions.  
 It's been made for the better understanding by novices.  
-Also all tasks in the lecture (except first one) are visual.  
+Also all tasks in the first lecture (except first one) are visual.  
 Anyway you need to run the code to see the result.  
 So there is no tests for the first lecture's code.  
 Some other tasks in the course are visual also and don't have tests as well.

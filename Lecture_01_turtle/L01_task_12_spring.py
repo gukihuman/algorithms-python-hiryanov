@@ -11,7 +11,7 @@ turtle.shape('turtle')
 
 # Instead of using a function which uses length and angle, it could be
 # a function which uses radius. But this will use additional
-# calculations (as in task 09). It's not necessary in this task.
+# calculations (as in the task 09). It's not necessary in this task.
 def half_circle(length, angle):
 	"""
 	Draws a half of a circle to the right. In fact, the half of
