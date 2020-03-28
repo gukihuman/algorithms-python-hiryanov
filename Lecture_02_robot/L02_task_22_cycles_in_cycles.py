@@ -6,11 +6,11 @@ from pyrob.api import *
 @task
 def task_5_10():
 	"""
-	Task 22: Fill the whole field. Starting position is the top left corner.
-	The size of the field is not known. Stop at the bottom left corner.
+	Task 22: Fill the whole field. The size of the field is not known.
+	Starting position is the top left corner. Stop at the bottom left corner.
 	"""
 
-	def opposite_move():
+	def move_opposite():
 		"""
 		Moves left if wall is on the left or right if wall is on the right.
 		Fills the cells all the time.
@@ -37,7 +37,7 @@ def task_5_10():
 	# Moves to the opposite side of the field while there is no wall beneath.
 	# Then moves down. Fills the cells all the time.
 	while not wall_is_beneath():
-		opposite_move()
+		move_opposite()
 
 		# Moves down filling the last cell.
 		fill_cell()
@@ -45,7 +45,7 @@ def task_5_10():
 
 	# After the previous cycle, the position is in the cell, where is
 	# a wall beneath. Moves to the opposite side for the last time.
-	opposite_move()
+	move_opposite()
 
 	# Fill the last cell.
 	fill_cell()
