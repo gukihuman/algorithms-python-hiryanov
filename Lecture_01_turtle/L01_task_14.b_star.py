@@ -16,6 +16,7 @@ def star(corners, length):
 	:param corners: an amount of corner verticals of a star
 	:param length: a length between two corner verticals
 	"""
+
 	for i in range(corners):
 		turtle.forward(length)
 		turtle.left(180 - (360 / corners / 2))

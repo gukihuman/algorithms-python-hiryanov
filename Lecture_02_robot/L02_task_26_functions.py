@@ -11,7 +11,8 @@ def task_2_4():
 	"""
 
 	# Using the 4 different function of crosses in this task gives
-	# the effective speed of the whole movement.
+	# the effective speed of the whole movement. Though the task could be
+	# solved a little bit faster, the code would be mach harder to read.
 	def cross_top_left():
 		"""
 		Draws a cross by two crossing lines, 3 cell each.

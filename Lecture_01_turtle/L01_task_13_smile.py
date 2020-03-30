@@ -17,8 +17,8 @@ import math
 turtle.shape('turtle')
 
 # This function will be used to draw a circle by using
-# a high amount of sides of a polygon. Also it uses radius
-# for better positioning of all the figures. It was used in
+# a high amount of sides of a polygon. Also it uses a radius
+# for a better positioning of all the figures. It was used in
 # the task 09, but here is type-parameter added.
 def polygon(sides, radius, type=360):
 	"""
