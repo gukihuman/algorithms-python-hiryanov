@@ -8,8 +8,8 @@ def task_6_6():
 	"""
 	Task 23: There is the horizontal tunnel connected to vertical corridors
 	above. The amount and the size of the corridors is not known.
-	Starting position is in the cell before the tunnel.
-	Fill the all corridors and go back to the same position.
+	Starting position is in the left cell before the tunnel.
+	Fill all the corridors and go back to the same position.
 	"""
 
 	# Sets an empty length of the tunnel.

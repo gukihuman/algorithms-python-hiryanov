@@ -8,7 +8,7 @@ The site with [all tasks](http://judge.mipt.ru/mipt_cs_on_python3/).
 >Features:
 - Tests for most of the answers.
 - Every answer from contest has a separated file with additional code for the upload purpose.
-- Every answer has a detailed description of the task (as a comment inside code).
+- Every answer has a detailed description of the task (as a comment inside the code).
 
 >Some explanations:
 

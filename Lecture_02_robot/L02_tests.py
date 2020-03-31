@@ -1,0 +1,42 @@
+#!/usr/bin/python3
+
+import sys
+from pyrob.api import run_tasks
+
+import L02_task_01_simple_commands
+import L02_task_02_simple_commands
+import L02_task_03_simple_terms
+import L02_task_04_simple_terms
+import L02_task_05_cycles_and_terms
+import L02_task_06_cycles_and_terms
+import L02_task_07_cycles_and_terms
+import L02_task_08_cycles_and_terms
+import L02_task_09_terms_in_cycles
+import L02_task_10_terms_in_cycles
+import L02_task_11_terms_in_cycles
+import L02_task_12_terms_in_cycles
+import L02_task_13_terms_in_cycles
+import L02_task_14_terms_in_cycles
+import L02_task_15_cycles_in_terms
+import L02_task_16_cycles_in_terms
+import L02_task_17_cycles_in_terms
+import L02_task_18_cycles_in_terms
+import L02_task_19_cycles_in_terms
+import L02_task_20_cycles_in_cycles
+import L02_task_21_cycles_in_cycles
+import L02_task_22_cycles_in_cycles
+import L02_task_23_cycles_in_cycles
+import L02_task_24_functions
+import L02_task_25_functions
+import L02_task_26_functions
+import L02_task_27_variables
+import L02_task_28_variables
+import L02_task_29_variables
+import L02_task_30_variables
+import L02_task_31_variables
+import L02_task_32_variables
+
+
+if __name__ == '__main__':
+    res = run_tasks(headless=True)
+    sys.exit(0 if res else -1)
