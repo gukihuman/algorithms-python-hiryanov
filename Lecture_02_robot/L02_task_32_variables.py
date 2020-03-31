@@ -7,13 +7,13 @@ from pyrob.api import *
 def task_8_18():
     """
     Task 32: There is the horizontal tunnel connected to vertical corridors
-	above. The amount and the size of the corridors is not known.
-	The tunnel has exit and the wall on the right just after the tunnel ends.
-	Stop in this cell near the right wall. Starting position is in the
-	very left cell in the tunnel. Fill the cell of the tunnel if there is no
-	corridor above. Also there is already the filled cells in the corridors.
-	Count this cells and save the amount in the "ax" register by the "mov"
-	function. The last part is: fills the rest of the cells in the corridors.
+    above. The amount and the size of the corridors is not known.
+    The tunnel has exit and the wall on the right just after the tunnel ends.
+    Stop in this cell near the right wall. Starting position is in the
+    very left cell in the tunnel. Fill the cell of the tunnel if there is no
+    corridor above. Also there is already the filled cells in the corridors.
+    Count this cells and save the amount in the "ax" register by the "mov"
+    function. The last part is: fills the rest of the cells in the corridors.
     """
 
     # Introduces the amount of the already filled cells.
