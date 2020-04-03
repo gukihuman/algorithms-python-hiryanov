@@ -6,9 +6,9 @@ The playlist with [all video-lectures](https://www.youtube.com/watch?v=KdZ4HF1Sr
 The site with [all tasks](http://judge.mipt.ru/mipt_cs_on_python3/).
 ***
 >Features:
+- Visual explanations as .png images for some tasks.
+- Detailed commentary (including the description of the task).
 - Tests for most of the answers.
-- Every answer from contest has a separated file with additional code for the upload purpose.
-- Every answer has a detailed description of the task (as a comment inside the code).
 
 >Some explanations:
 
