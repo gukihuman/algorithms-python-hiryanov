@@ -12,13 +12,15 @@ The site with [all tasks](http://judge.mipt.ru/mipt_cs_on_python3/).
 
 >Some explanations:
 
-Most of the answers are written as functions.  
+Most of the answers are written as one whole function.  
 You can put them in another file as module.  
 Tests use answers as modules (via import).  
 Tests is printing results when running.
 
-Though, first answers from the first lecture aren't written as functions.  
+Though, first answers from the first lecture aren't written as functions at all.  
 It's been made for the better understanding by novices.  
+A bit later in the first lecture, the functions are introduced.
+Though this functions are still parts of the whole task code.
 Also all tasks in the first lecture (except first one) are visual.  
 Anyway you need to run the code to see the result.  
 So there is no tests for the first lecture's code.  
