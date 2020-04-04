@@ -1,5 +1,6 @@
 from L03_task_A_digits_sum import digits_sum
 from L03_task_B_queens_move import queens_move
+from L03_task_C_leap_year import leap_year
 
 print('\n', 'Testing the tasks of Lecture 03:', '\n', sep='')
 
@@ -37,4 +38,22 @@ print('Test 3: ', end='')
 coordinates = [4, 3, 1, 1]
 result = 'NO'
 print('OK' if queens_move(*coordinates) == result else 'Fail')
+print('')
+
+
+print('Task C. Leap year:')
+print('Test 1: ', end='')
+year = 1
+result = 'NO'
+print('OK' if leap_year(year) == result else 'Fail', end='    ')
+
+print('Test 2: ', end='')
+year = 2000
+result = 'YES'
+print('OK' if leap_year(year) == result else 'Fail', end='    ')
+
+print('Test 3: ', end='')
+year = 1668
+result = 'YES'
+print('OK' if leap_year(year) == result else 'Fail')
 print('')

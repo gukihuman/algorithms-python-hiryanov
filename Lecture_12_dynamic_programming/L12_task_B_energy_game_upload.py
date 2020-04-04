@@ -11,9 +11,9 @@ def energy_game(platforms, length=None):
     left to right. It is necessary to find what minimum amount of energy
     a hero needs to get from the first platform to the last.
 
-    :param platforms: list of numbers
-    :param length: length of the number's list, integer type
-    :return: minimum amount of energy to get to the last platform
+    :param platforms: a list of numbers
+    :param length: the length of the number's list, integer type
+    :return: the minimum amount of energy to get to the last platform
     """
 
     # Finds the length of the original number's list if necessary.
@@ -75,6 +75,9 @@ def energy_game(platforms, length=None):
 # The first line shows the number of platforms (0 < n <= 30000).
 # Next, the height of all platforms by one on an each line
 
+# Output format:
+# The number showing the minimum amount of energy to get to the last platform.
+
 # Catches the length of the platform's list.
 length = int(input())
 
@@ -85,7 +88,7 @@ platforms = []
 for i in range(length):
     platforms.append(int(input()))
 
-# Uses the function to find minimum amount of energy
+# Uses the function to find the minimum amount of energy
 # to get to the last platform.
 answer = energy_game(platforms, length)
 

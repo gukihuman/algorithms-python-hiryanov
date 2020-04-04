@@ -27,7 +27,7 @@ So there is no tests for the first lecture's code.
 Some other tasks in the course are visual also and don't have tests as well.
 
 Sometimes files from different lectures are opened at the same time.  
-Names of files starts from the number of the lecture, e.g. "L01".  
+Names of the files starts from the number of the lecture, e.g. "L01".  
 It's been made for the better navigate purpose.
 
 Files with upload-suffix have been written to send it in the course-testing site.  

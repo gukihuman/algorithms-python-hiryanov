@@ -44,13 +44,18 @@ def queens_move(start_x, start_y, stop_x, stop_y):
 # 4 numbers. First and second are x and y coordinates for the starting cell.
 # Third and fourth x and y coordinates for the stop cell.
 
+# Output format:
+# 'YES' or 'NO' for the possibility for a queen to reach the second cell
+# from the first by only one move.
+
 # Catches the coordinates from input.
 start_x = int(input())
 start_y = int(input())
 stop_x = int(input())
 stop_y = int(input())
 
-# Uses the function to find the answer for the task.
+# Uses the function to find if it is possible for a queen to reach
+# the second cell from the first by only one move.
 answer = queens_move(start_x, start_y, stop_x, stop_y)
 
 # Print the answer.
