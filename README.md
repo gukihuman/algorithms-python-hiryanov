@@ -30,8 +30,12 @@ Sometimes files from different lectures are opened at the same time.
 Names of the files starts from the number of the lecture, e.g. "L01".  
 It's been made for the better navigate purpose.
 
-Files with upload-suffix have been written to send it in the course-testing site.  
+Files with "upload" suffix have been written to send it in the course-testing site.  
 This files contains additional code below the main.  
 This code is able to get some input data and give some output data (via print).  
 Using a good editor (like the PyCharm), you can collapse a whole function in one line.  
 It's much easier to read additional code this way.
+
+There is no standalone modules for the files with "upload_only" suffix.  
+There is no tests for those answers (contest online-test only).  
+It is because those tasks is limited by memory and use big input data.

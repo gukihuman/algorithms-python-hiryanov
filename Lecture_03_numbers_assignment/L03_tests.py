@@ -95,3 +95,7 @@ number = 1627
 result = 11
 print('OK' if logarithm(number) == result else 'Fail')
 print('')
+
+
+print('There is no tests for the answers of tasks: F, G, H, I, J')
+print('(contest online-test only).')
