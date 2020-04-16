@@ -1,8 +1,13 @@
 """
+This picture is based on previous from task 01.
+It's changed by positions of objects.
+It's been made to show how difficult it is to change flat-style code.
+
 Draws a picture with a couple of objects.
 Most of the functions in graphics module are easy to understand.
 They creates objects, changes parameters and draws objects.
 "gr.Point" is a point with two parameters: "x" and "y" coordinates.
+The coordinates starts from upper left corner to lower right corner.
 There is three empty lines between the blocks of the code.
 Each block is one object. A first part is main and contains parameters.
 Other is just additional repeated necessity.
@@ -11,7 +16,7 @@ The code was written in flat-style for an education purpose.
 
 import graphics as gr
 
-# Opens a window with 800 length and 600 width.
+# Opens a window with 800 length and 600 width with the name.
 window = gr.GraphWin("City of Dreams", 800, 600)
 
 
@@ -30,8 +35,8 @@ sky.draw(window)
 
 
 
-# Creates a circle of grass by a center point and a radius.
-grass = gr.Circle(gr.Point(400, 15290), 15000)
+# Creates a big circle of grass by a center point and a radius.
+grass = gr.Circle(gr.Point(400, 12290), 12000)
 
 # Fills the grass by green.
 grass.setFill('green')
@@ -45,7 +50,7 @@ grass.draw(window)
 
 
 # Creates a circle of sun by a center point and a radius.
-sun = gr.Circle(gr.Point(330, 90), 40)
+sun = gr.Circle(gr.Point(450, 110), 40)
 
 # Fills the sun by yellow.
 sun.setFill('yellow')
@@ -59,11 +64,11 @@ sun.draw(window)
 
 
 # Creates five circles of a cloud by a center point and a radius.
-cloud_left = gr.Circle(gr.Point(100, 145), 35)
-cloud_middle = gr.Circle(gr.Point(150, 130), 40)
-cloud_right = gr.Circle(gr.Point(190, 150), 30)
-cloud_left_mini = gr.Circle(gr.Point(130, 175), 30)
-cloud_right_mini = gr.Circle(gr.Point(165, 180), 25)
+cloud_left = gr.Circle(gr.Point(600, 165), 35)
+cloud_middle = gr.Circle(gr.Point(650, 150), 40)
+cloud_right = gr.Circle(gr.Point(690, 170), 30)
+cloud_left_mini = gr.Circle(gr.Point(630, 195), 30)
+cloud_right_mini = gr.Circle(gr.Point(665, 200), 25)
 
 # Fills the circles of the cloud by white.
 cloud_left.setFill('white')
@@ -90,11 +95,11 @@ cloud_right_mini.draw(window)
 
 # Creates a rectangle by diagonal-opposite points and
 # six circles by a center point and a radius. It's a tree.
-trunk = gr.Rectangle(gr.Point(603, 150), gr.Point(617, 350))
-foliage_big = gr.Circle(gr.Point(610, 150), 85)
-foliage_left = gr.Circle(gr.Point(580, 210), 45)
-foliage_right = gr.Circle(gr.Point(640, 210), 48)
-foliage_mini = gr.Circle(gr.Point(610, 240), 25)
+trunk = gr.Rectangle(gr.Point(163, 140), gr.Point(177, 350))
+foliage_big = gr.Circle(gr.Point(170, 140), 85)
+foliage_left = gr.Circle(gr.Point(140, 200), 45)
+foliage_right = gr.Circle(gr.Point(200, 200), 48)
+foliage_mini = gr.Circle(gr.Point(170, 230), 25)
 
 # Fills the rectangle and the circles of the tree.
 trunk.setFill('brown')
@@ -120,10 +125,10 @@ foliage_mini.draw(window)
 
 
 # Creates four circles of a lake by a center point and a radius.
-lake_left = gr.Circle(gr.Point(280, 400), 50)
-lake_middle_left = gr.Circle(gr.Point(345, 425), 75)
-lake_middle_right = gr.Circle(gr.Point(420, 425), 90)
-lake_right = gr.Circle(gr.Point(480, 410), 60)
+lake_left = gr.Circle(gr.Point(380, 420), 50)
+lake_middle_left = gr.Circle(gr.Point(445, 445), 75)
+lake_middle_right = gr.Circle(gr.Point(520, 445), 90)
+lake_right = gr.Circle(gr.Point(580, 430), 60)
 
 # Fills the circles of the lake by blue.
 lake_left.setFill('blue')
