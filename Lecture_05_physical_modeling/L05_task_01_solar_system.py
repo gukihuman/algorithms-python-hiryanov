@@ -104,8 +104,8 @@ mars_velocity = gr.Point(0, -4.05)
 mars_acceleration = gr.Point(0, 0)
 
 # Initializes a cycle with 2000 iterations. Each iteration calculates
-# the new positoins of heavenly bodys.
-for x in range(2000):
+# the new positoins of heavenly bodys. It takes 40 seconds with 0.02 delay.
+for i in range(2000):
 
     # Moves objects by their velocity.
     venus.move(venus_velocity.x, venus_velocity.y)

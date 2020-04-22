@@ -1,18 +1,25 @@
 # algorithms-python-Hiryanov
-#### Answers for the course: "Algorithms and data structure at Python" _____by Timofey Hiryanov 2017-2018._____
+
+#### Answers for the course: "Algorithms and data structure at Python" **\_**by Timofey Hiryanov 2017-2018.**\_**
+
 ##### `[work in progress]`
-***
+
+---
+
 The playlist with [all video-lectures](https://www.youtube.com/watch?v=KdZ4HF1SrFs&list=PLRDzFCPr95fK7tr47883DFUbm4GeOjjc0).  
 The site with [all tasks](http://judge.mipt.ru/mipt_cs_on_python3/).
-***
->Features:
+
+---
+
+> Features:
+
 - Visual explanations as .png images for some tasks.
 - Detailed commentary (including the description of the task).
 - Tests for most of the answers.
 
->Some explanations:
+> Some explanations:
 
-Don't worry about additional files like "graphics.py".  
+Don't worry about additional files or directories like "graphics.py" or "pyrob".  
 These are the modules required for the code of answers.
 
 Most of the answers are written as one whole function.  
