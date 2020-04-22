@@ -12,6 +12,9 @@ The site with [all tasks](http://judge.mipt.ru/mipt_cs_on_python3/).
 
 >Some explanations:
 
+Don't worry about additional files like "graphics.py".  
+These are the modules required for the code of answers.
+
 Most of the answers are written as one whole function.  
 You can put them in another file as module.  
 Tests use answers as modules (via import).  

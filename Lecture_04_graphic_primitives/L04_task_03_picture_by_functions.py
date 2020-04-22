@@ -287,11 +287,14 @@ window = gr.GraphWin("City of Dreams", 800, 600)
 # Draws a rectangle of sky by diagonal-opposite points.
 rectangle(0, 'blue', 0, 0, 800, 275)
 
-# Draws a big circle of grass by a center point and a radius.
+# Draws a big circle of ground by a center point and a radius.
 circle(0, 'green', 400, 12265, 12000)
 
 # Draws complex objects. Sun is drawn by a center point and a radius.
 # Other objects is drawn by a top left corner and a width.
+# Similar objects starts from the biggest one to the smallest one, except
+# the situations where object needs to be behind another object.
+# Some objects has an additional commentary for easier navigate.
 sun(236, 135, 40)
 man(538, 270, 18)  # hiding man
 building(610, 180, 145)
