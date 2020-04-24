@@ -1,6 +1,6 @@
 # algorithms-python-Hiryanov
 
-#### Answers for the course: "Algorithms and data structure at Python" **\_**by Timofey Hiryanov 2017-2018.**\_**
+#### Answers for the course: "Algorithms and data structure at Python" _by Timofey Hiryanov 2017-2018._
 
 ##### `[work in progress]`
 
@@ -19,7 +19,7 @@ The site with [all tasks](http://judge.mipt.ru/mipt_cs_on_python3/).
 
 > Some explanations:
 
-Don't worry about additional files or directories like "graphics.py" or "pyrob".  
+Don't worry about additional files or directories like "pyrob" or "graphics.py".  
 These are the modules required for the code of answers.
 
 Most of the answers are written as one whole function.  

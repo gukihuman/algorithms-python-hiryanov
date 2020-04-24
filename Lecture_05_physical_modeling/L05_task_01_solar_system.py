@@ -25,8 +25,8 @@ def add(point1, point2):
 
 def sub(point1, point2):
     """
-    Subtracts two coordinates. Each point of input has to be "gr.Point".
-    It has "x" and "y" parameters called by ".x" and ".y".
+    Subtracts a second coordinate from a first. Each point of input has
+    to be "gr.Point". It has "x" and "y" parameters called by ".x" and ".y".
 
     :param point1: a first coordinate
     :param point2: a second coordinate
@@ -41,25 +41,25 @@ def sub(point1, point2):
     return point
 
 
-def update_acceleration(ball_coords, center_coords):
+def update_acceleration(planet_coords, center_coords):
     """
     Calculates a new point of a ball in casual gravity model, where
     center point is a source of gravity.
 
-    :param ball_coords: a ball coordinates
+    :param planet_coords: a ball coordinates
     :param center_coords: a center coordinates
     :return: a point which is a result of calculating
     """
 
     # Calculates a new point of a ball in casual gravity model
     # using the tricky formula. "diff" is difference.
-    diff = sub(ball_coords, center_coords)
-    distance_2 = (diff.x ** 2 + diff.y ** 2) ** (3/2)
+    diff = sub(planet_coords, center_coords)
+    distance = (diff.x ** 2 + diff.y ** 2) ** (3/2)
     G = 2000
-    point = gr.Point(-diff.x*G/distance_2, -diff.y*G/distance_2)
+    new_point = gr.Point(-diff.x * G / distance, -diff.y * G / distance)
 
     # Returns a new point of a ball.
-    return point
+    return new_point
 
 
 # Opens a window with 800 length and 800 width with the name.
@@ -103,9 +103,9 @@ mars.draw(window)
 mars_velocity = gr.Point(0, -4.05)
 mars_acceleration = gr.Point(0, 0)
 
-# Initializes a cycle with 2000 iterations. Each iteration calculates
-# the new positoins of heavenly bodys. It takes 40 seconds with 0.02 delay.
-for i in range(2000):
+# Initializes an infinite cycle with breaking point, which is closing
+# the window. Each iteration calculates the new positoins of heavenly bodys.
+while True:
 
     # Moves objects by their velocity.
     venus.move(venus_velocity.x, venus_velocity.y)
@@ -129,3 +129,7 @@ for i in range(2000):
 
     # Sets a bit of delay for comfort watching.
     gr.time.sleep(0.02)
+
+    # Breaks the cycle if the window is manually closed.
+    if window.isClosed():
+        break
