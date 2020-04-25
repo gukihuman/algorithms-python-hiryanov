@@ -1,5 +1,10 @@
 """
 Runs a casual model of solar system.
+
+Most of the functions in graphics module are easy to understand.
+They creates objects, changes parameters and draws objects.
+"gr.Point" is a point with two parameters: "x" and "y" coordinates.
+The coordinates starts from upper left corner to lower right corner.
 """
 
 import graphics as gr
@@ -17,10 +22,7 @@ def add(point1, point2):
 
     # Adds coordinates by "x" for x-coordinate of new point and by
     # "y" for y-coordinate of new point.
-    point = gr.Point(point1.x + point2.x, point1.y + point2.y)
-
-    # Returns the new point
-    return point
+    return gr.Point(point1.x + point2.x, point1.y + point2.y)
 
 
 def sub(point1, point2):
@@ -35,10 +37,7 @@ def sub(point1, point2):
 
     # Subtracts coordinates by "x" for x-coordinate of new point and by
     # "y" for y-coordinate of new point.
-    point = gr.Point(point1.x - point2.x, point1.y - point2.y)
-
-    # Returns the new point
-    return point
+    return gr.Point(point1.x - point2.x, point1.y - point2.y)
 
 
 def update_acceleration(planet_coords, center_coords):
