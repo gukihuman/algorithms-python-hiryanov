@@ -8,6 +8,7 @@ The coordinates starts from upper left corner to lower right corner.
 """
 
 import graphics as gr
+import random as r
 
 
 def add(point1, point2):
@@ -61,6 +62,54 @@ def update_acceleration(planet_coords, center_coords):
     return new_point
 
 
+def planet_draw(name, size, color, coord_x, coord_y, velocity_x, velocity_y):
+    """
+    Draws a planet. Global functions creates unique names of a planets.
+
+    :param name: a string of a planet name
+    :param size: a planet size
+    :param color: a string of a planet color
+    :param coord_x: "x" coordinate of a planet
+    :param coord_y: "y" coordinate of a plenet
+    :param velocity_x: "x" coordinate of planet velocity
+    :param velocity_y: "y" coordinate of planet velocity
+    """
+
+    # Sets planet coordinatinos and draws it.
+    globals()[name + '_coords'] = gr.Point(coord_x, coord_y)
+    globals()[name] = gr.Circle(globals()[name + '_coords'], size)
+    globals()[name].setFill(color)
+    globals()[name].draw(window)
+
+    # Sets planet velocity and acceleration.
+    globals()[name + '_velocity'] = gr.Point(velocity_x, velocity_y)
+    globals()[name + '_acceleration'] = gr.Point(0, 0)
+
+
+def planet_move(name):
+    """
+    Moves a planet. Global functions calls unique name of a planet.
+
+    :param name: a string of a planet name
+    """
+
+    # Moves objects by their velocity.
+    globals()[name].move(globals()[name + '_velocity'].x,
+                         globals()[name + '_velocity'].y)
+
+    # Updates acceleration by current coordinations and sun coordinations.
+    globals()[name + '_acceleration'] = update_acceleration(
+        globals()[name + '_coords'], sun_coords)
+
+    # Updates velocity by addition of current velocity and acceleration.
+    globals()[name + '_velocity'] = add(globals()[name + '_velocity'],
+                                        globals()[name + '_acceleration'])
+
+    # Updates coordinates by addition of current coordinations and velocity.
+    globals()[name + '_coords'] = add(globals()[name + '_coords'],
+                                      globals()[name + '_velocity'])
+
+
 # Opens a window with 800 length and 800 width with the name.
 window = gr.GraphWin("Model", 800, 800)
 
@@ -69,65 +118,42 @@ space = gr.Rectangle(gr.Point(0, 0), gr.Point(800, 800))
 space.setFill('black')
 space.draw(window)
 
+# Draws stars with random positions.
+for i in range(50):
+    star = gr.Circle(
+        gr.Point(r.randrange(800), r.randrange(800)), 1)
+    star.setFill('white')
+    star.draw(window)
+
 # Sets coordinatinos of Sun and draws it.
 sun_coords = gr.Point(400, 400)
-sun = gr.Circle(sun_coords, 50)
+sun = gr.Circle(sun_coords, 20)
 sun.setFill('yellow')
 sun.draw(window)
 
-# Sets coordinatinos of Venus and draws it.
-# Also sets it's starting velocity and acceleration.
-venus_coords = gr.Point(500, 400)
-venus = gr.Circle(venus_coords, 10)
-venus.setFill('yellow')
-venus.draw(window)
-venus_velocity = gr.Point(0, -4.75)
-venus_acceleration = gr.Point(-0.5, -0.5)
+# Sets coordinations of planets and draws it.
+# Also sets it's starting velocity.
+planet_draw('mercury', 2, '#A4868D', 400, 437, 7.2, 0)
+planet_draw('venus', 5, '#499F91', 455, 400, 0, -6.1)
+planet_draw('earth', 6, '#0044FF', 400, 325, -5.25, 0)
+planet_draw('mars', 4, '#980A0A', 300, 400, 0, 4.42)
+planet_draw('jupiter', 15, '#685020', 210, 400, 0, 3.2)
+planet_draw('saturn', 13, '#8A6D32', 400, 150, -2.82, 0)
+planet_draw('uranus', 9, '#0E544D', 710, 400, 0, -2.6)
+planet_draw('neptune', 8, '#0E3554', 400, 770, 2.34, 0)
 
-# Sets coordinatinos of Earth and draws it.
-# Also sets it's starting velocity and acceleration.
-earth_coords = gr.Point(670, 400)
-earth = gr.Circle(earth_coords, 15)
-earth.setFill('blue')
-earth.draw(window)
-earth_velocity = gr.Point(0, -2.75)
-earth_acceleration = gr.Point(0, 0)
-
-# Sets coordinatinos of Mars and draws it.
-# Also sets it's starting velocity and acceleration.
-mars_coords = gr.Point(550, 400)
-mars = gr.Circle(mars_coords, 8)
-mars.setFill('red')
-mars.draw(window)
-mars_velocity = gr.Point(0, -4.05)
-mars_acceleration = gr.Point(0, 0)
 
 # Initializes an infinite cycle with breaking point, which is closing
 # the window. Each iteration calculates the new positoins of heavenly bodys.
 while True:
 
-    # Moves objects by their velocity.
-    venus.move(venus_velocity.x, venus_velocity.y)
-    earth.move(earth_velocity.x, earth_velocity.y)
-    mars.move(mars_velocity.x, mars_velocity.y)
-
-    # Updates acceleration by current coordinations and sun coordinations.
-    venus_acceleration = update_acceleration(venus_coords, sun_coords)
-    earth_acceleration = update_acceleration(earth_coords, sun_coords)
-    mars_acceleration = update_acceleration(mars_coords, sun_coords)
-
-    # Updates velocity by addition of current velocity and acceleration.
-    venus_velocity = add(venus_velocity, venus_acceleration)
-    earth_velocity = add(earth_velocity, earth_acceleration)
-    mars_velocity = add(mars_velocity, mars_acceleration)
-
-    # Updates coordinates by addition of current coordinations and velocity.
-    venus_coords = add(venus_coords, venus_velocity)
-    earth_coords = add(earth_coords, earth_velocity)
-    mars_coords = add(mars_coords, mars_velocity)
+    # Moves planets.
+    for i in ('mercury', 'venus', 'mars', 'earth', 'jupiter', 'saturn',
+              'uranus', 'neptune'):
+        planet_move(i)
 
     # Sets a bit of delay for comfort watching.
-    gr.time.sleep(0.02)
+    gr.time.sleep(0.035)
 
     # Breaks the cycle if the window is manually closed.
     if window.isClosed():

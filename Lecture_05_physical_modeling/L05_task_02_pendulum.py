@@ -33,22 +33,23 @@ def update_angle():
     :return: a new angle of ball deviation
     """
 
-    # Calculates a new angle of ball deviation by negative arctangent of
+    # Calculates a new angle of ball deviation by arctangent of
     # the ball deviation and a ball height.
     return math.atan(ball_deviation / ball_height)
 
 
 def update_ball_acceleration():
     """
-    Calculates a new acceleration of a ball by a gravity constant multiplied by
-    a new angle as a "x" coordinate and a difference between old and new height
-    as a "y" coordinate. "x" coordinate is negative because a starting point is
-    on the right, so a ball needs to go to the left. "x" coordinate needs to be
-    decreased.
+    Calculates a new acceleration of a ball.
 
     :return: an acceleration as a coordinate
     """
 
+    # Calculates a new acceleration of a ball by a gravity constant multiplied
+    # by a new angle as a "x" coordinate and a difference between old and
+    # new height as a "y" coordinate. "x" coordinate is negative because
+    # a starting point is on the right, so a ball needs to go to the left.
+    # "x" coordinate needs to be decreased.
     return gr.Point(-(G * angle),
                     ball_height - (ball_coords.y - vertex_coords.y))
 
@@ -88,11 +89,11 @@ def draw_cord():
 
         # Sets element coordinates as a "gr.Point" coordinate.
         # "x" coordinate of an element is based on a "x" coordinate of
-        # a distance between elements multiplied by index and
-        # "x" coordinate of pendulum vertex.
+        # a distance between elements multiplied by index and "x" coordinate
+        # of pendulum vertex.
         # "y" coordinate of an element is based on a "y" coordinate of
-        # a distance between elements multiplied by index and
-        # "y" coordinate of pendulum vertex.
+        # a distance between elements multiplied by index and "y" coordinate
+        # of pendulum vertex.
         element_coords = gr.Point(elements_distance.x*i + vertex_coords.x,
                                   elements_distance.y*i + vertex_coords.y)
 
@@ -191,6 +192,9 @@ while True:
     # Moves a ball by "x" coordinate and "y" coordinate of velocity.
     ball.move(ball_velocity.x, ball_velocity.y)
 
+    # Moves a cord.
+    move_cord()
+
     # Updates ball coordinates by an addition of old ball coordinates and
     # velocity.
     ball_coords = add(ball_coords, ball_velocity)
@@ -201,9 +205,6 @@ while True:
 
     # Updates ball height.
     ball_height = update_ball_height()
-
-    # Moves a cord.
-    move_cord()
 
     # Sets a bit of delay for comfort watching.
     gr.time.sleep(0.01)
