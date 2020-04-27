@@ -62,7 +62,7 @@ def update_acceleration(planet_coords, center_coords):
     return new_point
 
 
-def planet_draw(name, size, color, coord_x, coord_y, velocity_x, velocity_y):
+def planet_draw(coord_x, coord_y, name, size, color, velocity_x, velocity_y):
     """
     Draws a planet. Global functions creates unique names of a planets.
 
@@ -133,14 +133,14 @@ sun.draw(window)
 
 # Sets coordinations of planets and draws it.
 # Also sets it's starting velocity.
-planet_draw('mercury', 2, '#A4868D', 400, 437, 7.2, 0)
-planet_draw('venus', 5, '#499F91', 455, 400, 0, -6.1)
-planet_draw('earth', 6, '#0044FF', 400, 325, -5.25, 0)
-planet_draw('mars', 4, '#980A0A', 300, 400, 0, 4.42)
-planet_draw('jupiter', 15, '#685020', 210, 400, 0, 3.2)
-planet_draw('saturn', 13, '#8A6D32', 400, 150, -2.82, 0)
-planet_draw('uranus', 9, '#0E544D', 710, 400, 0, -2.6)
-planet_draw('neptune', 8, '#0E3554', 400, 770, 2.34, 0)
+planet_draw(400, 450, 'mercury', 3, '#A4868D', 6.1, 0)
+planet_draw(465, 400, 'venus', 5, '#499F91', 0, -5.6)
+planet_draw(400, 310, 'earth', 6, '#0044FF', -4.9, 0)
+planet_draw(280, 400, 'mars', 4, '#980A0A', 0, 4.2)
+planet_draw(210, 400, 'jupiter', 15, '#685020', 0, 3.2)
+planet_draw(400, 150, 'saturn', 13, '#8A6D32', -2.8, 0)
+planet_draw(710, 400, 'uranus', 9, '#0E544D', 0, -2.6)
+planet_draw(400, 770, 'neptune', 8, '#0E3554', 2.3, 0)
 
 
 # Initializes an infinite cycle with breaking point, which is closing
@@ -153,7 +153,7 @@ while True:
         planet_move(i)
 
     # Sets a bit of delay for comfort watching.
-    gr.time.sleep(0.035)
+    gr.time.sleep(0.03)
 
     # Breaks the cycle if the window is manually closed.
     if window.isClosed():

@@ -8,10 +8,10 @@ def logarithm(number):
     :return: the base 2 logarithm of the number
     """
 
-    # Creates a variable for the number which is lesser or equal to 2.
+    # Creates a variable for the input number which is lesser or equal to 2.
     power = 1
 
-    # Divides the number by 2 while the number is lesser or equal to 2.
+    # Divides the input number by 2 while the number is lesser or equal to 2.
     # Counts every iteration and adds it to the power variable.
     while number > 2:
         number /= 2
