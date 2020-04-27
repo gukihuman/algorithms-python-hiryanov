@@ -17,7 +17,7 @@ print('OK' if circle_affiliation(coord_x, coord_y, radius) == result
       else 'Fail', end='    ')
 
 print('Test 1: ', end='')
-coord_x, coord_y, radius = 4, 4, 5
+coord_x, coord_y, radius = -4, 4, 5
 result = 'NO'
 print('OK' if circle_affiliation(coord_x, coord_y, radius) == result
       else 'Fail')

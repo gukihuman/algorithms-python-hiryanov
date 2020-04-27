@@ -1,6 +1,3 @@
-import math
-
-
 def circle_affiliation(coord_x, coord_y, radius):
     """
     There is a point and a circle with the center in coordinates origin.
@@ -16,10 +13,10 @@ def circle_affiliation(coord_x, coord_y, radius):
 
     # If an addition of coordinates at squares is lesser then a radius in
     # square, returns 'YES'. It's the Pythagoras theorem.
-    if math.fabs((coord_x ** 2) + (coord_y ** 2)) < math.fabs(radius ** 2):
+    if coord_x ** 2 + coord_y ** 2 < radius ** 2:
         return 'YES'
 
-        # Else returns 'NO'.
+    # Else returns 'NO'.
     return 'NO'
 
 # Input format:
