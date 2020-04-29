@@ -36,6 +36,9 @@ Anyway you need to run the code to see the result.
 So there is no tests for the first lecture's code.  
 Some other tasks in the course are visual also and don't have tests as well.
 
+Also some tasks are working with huge data from input.  
+There is no tests for them too. Only contest online-test.
+
 Sometimes files from different lectures are opened at the same time.  
 Names of the files starts from the number of the lecture, e.g. "L01".  
 It's been made for the better navigate purpose.

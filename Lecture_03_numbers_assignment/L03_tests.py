@@ -97,5 +97,6 @@ print('OK' if logarithm(number) == result else 'Fail')
 print('')
 
 
-print('There is no tests for the answers of tasks: F, G, H, I, J')
-print('(contest online-test only).')
+print('There is no tests for the answers of tasks: F, G, H, I, J.')
+print('Only contest online-test.')
+print('')

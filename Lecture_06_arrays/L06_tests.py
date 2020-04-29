@@ -44,3 +44,8 @@ result = 73
 print('OK' if bank_deposit(deposit, percent, target) == result
       else 'Fail')
 print('')
+
+
+print('There is no tests for the answers of tasks: C.')
+print('Only contest online-test.')
+print('')
