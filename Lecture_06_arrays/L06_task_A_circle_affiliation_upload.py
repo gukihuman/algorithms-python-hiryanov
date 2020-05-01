@@ -19,14 +19,16 @@ def circle_affiliation(coord_x, coord_y, radius):
     # Else returns 'NO'.
     return 'NO'
 
-# Input format:
-# A string with three digits and space between them. The first digit is
-# a "x" coordinate of a point. The second digit is a "y" coordinate of
-# a point. The third digit is a radius.
 
-# Output format:
-# 'YES' or 'NO' for an affiliation of a point.
+"""
+Input format:
+A string with three digits and space between them. The first digit is
+a "x" coordinate of a point. The second digit is a "y" coordinate of a point.
+The third digit is a radius.
 
+Output format:
+'YES' or 'NO' for an affiliation of a point.
+"""
 
 # Catches the values from input.
 input_string = str(input()).split()

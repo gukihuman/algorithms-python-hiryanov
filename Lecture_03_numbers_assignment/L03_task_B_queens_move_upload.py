@@ -40,13 +40,15 @@ def queens_move(start_x, start_y, stop_x, stop_y):
     return 'NO'
 
 
-# Input format:
-# 4 numbers. First and second are x and y coordinates for the starting cell.
-# Third and fourth x and y coordinates for the stop cell.
+"""
+Input format:
+4 numbers. First and second are x and y coordinates for the starting cell.
+Third and fourth x and y coordinates for the stop cell.
 
-# Output format:
-# 'YES' or 'NO' for the possibility for a queen to reach the second cell
-# from the first by only one move.
+Output format:
+'YES' or 'NO' for the possibility for a queen to reach the second cell
+from the first by only one move.
+"""
 
 # Catches the coordinates from input.
 start_x = int(input())

@@ -36,14 +36,15 @@ def bank_deposit(deposit, percent, target):
     return year
 
 
-# Input format:
-# A string with three digits and space between them. A first digit is
-# a bank deposit. The second digit is a year percent of the deposit.
-# The third digit is a target deposit.
+"""
+Input format:
+A string with three digits and space between them. A first digit is
+a bank deposit. The second digit is a year percent of the deposit.
+The third digit is a target deposit.
 
-# Output format:
-# A number of years to get the target deposit.
-
+Output format:
+A number of years to get the target deposit.
+"""
 
 # Catches the values from input.
 input_string = str(input()).split()

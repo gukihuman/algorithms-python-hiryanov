@@ -19,6 +19,9 @@ The site with [all tasks](http://judge.mipt.ru/mipt_cs_on_python3/).
 
 > Some explanations:
 
+Online contest tasks was made for 737 and 738 groups of the course.  
+This is only available option for remote learning.
+
 Don't worry about additional files or directories like "pyrob" or "graphics.py".  
 These are the modules required for the code of answers.
 

@@ -3,15 +3,15 @@ There is a sequence of "0" and "1". Find a max amount of the "1" in a row.
 
 This task is working with huge data from input.
 There is no test for it. Only contest online-test.
+
+Input format:
+First line is a number which is a size of following sequence.
+The size of the sequence is from 1 to 10000.
+Then a sequence of numbers: "0" or "1". Each one is on a new line.
+
+Output format:
+A number which is a max amount of the "1" in a row.
 """
-
-# Input format:
-# First line is a number which is a size of following sequence.
-# Then a sequence of numbers: "0" or "1". Each one is on a new line.
-
-# Output format:
-# A number which is a max amount of the "1" in a row.
-
 
 # Sets a current amount of "1" in a row to 0 at the beginning.
 current_amount = 0

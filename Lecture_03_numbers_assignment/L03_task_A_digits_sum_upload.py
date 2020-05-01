@@ -13,11 +13,13 @@ def digits_sum(number):
     return int(number[0]) + int(number[1]) + int(number[2])
 
 
-# Input format:
-# A three-digit number.
+"""
+Input format:
+A three-digit number.
 
-# Output format:
-# The number representing the sum of every digit in the input number.
+Output format:
+The number representing the sum of every digit in the input number.
+"""
 
 # Catches the number from input.
 number = int(input())

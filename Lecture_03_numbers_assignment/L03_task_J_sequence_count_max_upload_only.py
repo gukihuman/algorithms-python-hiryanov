@@ -5,15 +5,14 @@ input number is 0. The input numbers are greater then zero.
 
 This task is working with huge data from input.  
 There is no test for it. Only contest online-test.
+
+Input format:
+A sequence of numbers. Each one is on a new line. "0" means an end.
+
+Output format:
+A number which is an amount of the input numbers which are equal to
+the max number in the sequence.
 """
-
-# Input format:
-# A sequence of numbers. Each one is on a new line. "0" means an end.
-
-# Output format:
-# A number which is an amount of the input numbers which are equal to
-# the max number in the sequence.
-
 
 # Creates a variable for a maximum number.
 max_number = 0

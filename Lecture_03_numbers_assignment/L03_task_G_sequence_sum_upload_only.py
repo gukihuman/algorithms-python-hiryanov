@@ -4,14 +4,13 @@ It is done when input number is 0.
 
 This task is working with huge data from input.  
 There is no test for it. Only contest online-test.
+
+Input format:
+A sequence of numbers. Each one is on a new line. "0" means an end.
+
+Output format:
+A number which is a sum of the input numbers.
 """
-
-# Input format:
-# A sequence of numbers. Each one is on a new line. "0" means an end.
-
-# Output format:
-# A number which is a sum of the input numbers.
-
 
 # Creates a variable for a sum of numbers.
 sum = 0

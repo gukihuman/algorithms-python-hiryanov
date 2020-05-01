@@ -20,12 +20,15 @@ def logarithm(number):
     # Returns the power of 2 where the result is greater then the input number.
     return power
 
-# Input format:
-# A number.
 
-# Output format:
-# A number of the power of the 2 where the result is greater then
-# the input number.
+"""
+Input format:
+A number.
+
+Output format:
+A number of the power of the 2 where the result is greater then
+the input number.
+"""
 
 # Catches the number from input.
 number = int(input())
