@@ -199,8 +199,8 @@ while True:
     # velocity.
     ball_coords = add(ball_coords, ball_velocity)
 
-    # Updates ball deviation by new "x" coordinate of a ball and "x" coordinate
-    # of pendulum vertex.
+    # Updates ball deviation by new "x" coordinate of the ball and "x"
+    # coordinate of pendulum vertex.
     ball_deviation = ball_coords.x - vertex_coords.x
 
     # Updates ball height.

@@ -11,13 +11,13 @@ result = 'YES'
 print('OK' if circle_affiliation(coord_x, coord_y, radius) == result
       else 'Fail', end='    ')
 
-print('Test 1: ', end='')
+print('Test 2: ', end='')
 coord_x, coord_y, radius = -1, 3, 1
 result = 'NO'
 print('OK' if circle_affiliation(coord_x, coord_y, radius) == result
       else 'Fail', end='    ')
 
-print('Test 1: ', end='')
+print('Test 3: ', end='')
 coord_x, coord_y, radius = -4, 4, 5
 result = 'NO'
 print('OK' if circle_affiliation(coord_x, coord_y, radius) == result
@@ -46,6 +46,6 @@ print('OK' if bank_deposit(deposit, percent, target) == result
 print('')
 
 
-print('There is no tests for the answers of tasks: C, D.')
+print('There is no tests for the answers of tasks: C, D, E.')
 print('Only contest online-test.')
 print('')

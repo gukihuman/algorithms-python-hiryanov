@@ -1,11 +1,11 @@
 """
 There is two tasks in one. I guess it's a mistake of the course author, because
-there is no information about this in the task discription on the site.
+there is no information about this in the task description on the site.
 Let's name these two tasks "Option A" and "Option B". The official course
-discription on the site is only about the "Option A". But online tests also
+description on the site is only about the "Option A". But online tests also
 need the "Option B". Regardless of it, the problem is solvable. For completing
-the tests, first of all, checks the first line. If it has an empty space,
-there is an "Option B". Else "Option A". The discription for the options
+the tests, first of all, checks the first input line. If it has an empty space,
+there is an "Option B". Else "Option A". The description for the options
 will follow below.
 
 This task is working with huge data from input.
@@ -65,22 +65,22 @@ for i in first_line:
 
 """
 Option A:
-There is a sequence of integer numbers. The size of the sequence is always
-devided by 3 without residue. Find four numbers from the sequence.
-First number is a middle number from all numbers of the sequence.
-Second number is a maximum number from all numbers of the sequence.
-Third number is a minimum number from all numbers of the sequence.
-Fourth number is a tricky one and needs an additional explanations.
-The sequence is made by triplets. Every triplet contains three numbers.
-Find an addition of numbers in a triplet. Then, find the residue of
-the devision of the addition by the last number in the triplet.
-For example, the addition of 5, 6, 7 is 18. In this case, the residue of
-the devision of 18 by 7 is 4. Coming back to the fourth number needed
-to find, it's the addition of these residues from all triplets.
+There is a sequence of integer numbers. The size of the sequence is multiple of
+three. In other words, it's always devided by 3 without residue.
+Find four numbers from the sequence. First number is a middle number from
+all numbers of the sequence. Second number is a maximum number from all numbers
+of the sequence. Third number is a minimum number from all numbers of
+the sequence. Fourth number is a tricky one and needs an additional
+explanations. The sequence is made by triplets. Every triplet contains three
+numbers. Find a sum of numbers in a triplet. Then, find the residue of
+the devision of the sum by the last number in the triplet. For example,
+the sum of 5, 6, 7 is 18. In this case, the residue of the devision of
+18 by 7 is 4. Coming back to the fourth number needed to find, it's
+the sum of these residues from all triplets.
 
 
 Input format:
-A sequence of integer numbers. Each one is on a new line. "#" means an end.
+A sequence of integer numbers. Each one is on a new line. "#" means the end.
 A numbers are from 1 to 100.
 
 Output format:
@@ -95,24 +95,24 @@ all triplets.
 # If "Option A" variable is "True", there is an "Option A".
 if option_A:
 
-    # Sets an addition of all numbers in the sequence to 0.
+    # Sets a sum of all numbers in the sequence to 0.
     # It will be used for the middle number calculation.
-    sequence_addition = 0
+    sequence_sum = 0
 
     # Sets a counter of numbers to 0.
     # It will be used for the middle number calculation.
     counter = 0
 
     # Sets maximum of all numbers in the sequence to 0.
-    # Input numbers are from 1 to 100, so any number will be bigger.
+    # Input numbers are from 1 to 100, so any number will be greater.
     sequence_maximum = 0
 
     # Sets minimum of all numbers in the sequence to 101.
     # Input numbers are from 1 to 100, so any number will be lesser.
     sequence_minimum = 101
 
-    # Sets an addition of triplet residues to 0.
-    residues_addition = 0
+    # Sets a sum of triplet residues to 0.
+    residues_sum = 0
 
     # First checking line already exists. It's the first line.
     # Sets the checking line to the first line.
@@ -127,9 +127,9 @@ if option_A:
         # Sets a triplet by the checking line and two inputs.
         triplet = [int(checking_line), int(input()), int(input())]
 
-        # Adds the all triplet numbers to the sequence addition variable.
+        # Adds the all triplet numbers to the sequence sum variable.
         # It will be used for the middle number calculation.
-        sequence_addition += triplet[0] + triplet[1] + triplet[2]
+        sequence_sum += triplet[0] + triplet[1] + triplet[2]
 
         # Adds three to the counter of numbers.
         counter += 3
@@ -148,22 +148,22 @@ if option_A:
         if triplet_minimum < sequence_minimum:
             sequence_minimum = triplet_minimum
 
-        # Calculates the addition of the triplet numbers.
-        # Then calculates a residue of a devision of the addition by
+        # First, calculates the sum of the triplet numbers.
+        # Then calculates a residue of a devision of the sum by
         # the last number in the triplet.
         triplet_residue = (triplet[0] + triplet[1] + triplet[2]) % triplet[2]
 
-        # Adds the triplet residue to the addition of all residues.
-        residues_addition += triplet_residue
+        # Adds the triplet residue to the sum of all residues.
+        residues_sum += triplet_residue
 
         # Catches a checking line as a string, it might be a "#" symbol.
         checking_line = str(input())
 
     # Calculates a middle number and round it to three decimal places.
-    middle_number = round(sequence_addition / counter, 3)
+    middle_number = round(sequence_sum / counter, 3)
 
     # Prints the answer. It's a string with four numbers.
-    print(middle_number, sequence_maximum, sequence_minimum, residues_addition)
+    print(middle_number, sequence_maximum, sequence_minimum, residues_sum)
 
 
 """

@@ -43,7 +43,7 @@ a bank deposit. The second digit is a year percent of the deposit.
 The third digit is a target deposit.
 
 Output format:
-A number of years to get the target deposit.
+A number of years to reach the target deposit.
 """
 
 # Catches the values from input.
@@ -52,7 +52,7 @@ deposit = int(input_string[0])
 percent = int(input_string[1])
 target = int(input_string[2])
 
-# Uses the function to find if a point belongs to a circle or not.
+# Uses the function to find an amount of years to reach the target deposit.
 answer = bank_deposit(deposit, percent, target)
 
 # Print the answer.
