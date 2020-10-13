@@ -38,7 +38,6 @@ to be printed. Print out only assessments as it's sorted. First, by the sum
 of one student in reverse order. Second, by the assessments themselves
 in reverse order.
 
-
 Input format:
 The first line is an amount of the students. Then, on each line there is
 a student ID and one assessment separated by an empty space. Students may have
@@ -211,7 +210,7 @@ if not option_A:
 
         # Starts the printing, if the current item of the sequence is "True".
         # It means the number is primal.
-        if sequence[i] == True:
+        if sequence[i]:
 
             # Prints the current number with an empty space in the end.
             # This way all the numbers will be printed on the same line.

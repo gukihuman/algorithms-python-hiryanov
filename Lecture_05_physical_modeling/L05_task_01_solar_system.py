@@ -97,7 +97,7 @@ def planet_move(name):
     globals()[name].move(globals()[name + '_velocity'].x,
                          globals()[name + '_velocity'].y)
 
-    # Updates acceleration by current coordinations and sun coordinations.
+    # Updates acceleration by current coordinates and sun coordinates.
     globals()[name + '_acceleration'] = update_acceleration(
         globals()[name + '_coords'], sun_coords)
 
@@ -105,7 +105,7 @@ def planet_move(name):
     globals()[name + '_velocity'] = add(globals()[name + '_velocity'],
                                         globals()[name + '_acceleration'])
 
-    # Updates coordinates by addition of current coordinations and velocity.
+    # Updates coordinates by addition of current coordinates and velocity.
     globals()[name + '_coords'] = add(globals()[name + '_coords'],
                                       globals()[name + '_velocity'])
 
@@ -125,7 +125,7 @@ for i in range(50):
     star.setFill('white')
     star.draw(window)
 
-# Sets coordinatinos of Sun and draws it.
+# Sets coordinates of Sun and draws it.
 sun_coords = gr.Point(400, 400)
 sun = gr.Circle(sun_coords, 20)
 sun.setFill('yellow')

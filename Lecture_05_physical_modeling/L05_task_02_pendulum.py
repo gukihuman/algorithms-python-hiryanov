@@ -1,6 +1,7 @@
 """
 Runs a simple model of pendulum.
 
+There is image next to this file. The image explains the values in the code.
 Most of the functions in graphics module are easy to understand.
 They creates objects, changes parameters and draws objects.
 "gr.Point" is a point with two parameters: "x" and "y" coordinates.
