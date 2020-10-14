@@ -53,15 +53,15 @@ height = 2
 result = 3
 print('OK' if chocolate(height) == result else 'Fail', end='    ')
 
-print('Test 1: ', end='')
+print('Test 2: ', end='')
 height = 6
 result = 41
 print('OK' if chocolate(height) == result else 'Fail', end='    ')
 
-print('Test 1: ', end='')
+print('Test 3: ', end='')
 height = 10
 result = 571
-print('OK' if chocolate(height) == result else 'Fail', end='    ')
+print('OK' if chocolate(height) == result else 'Fail')
 print('')
 
 
