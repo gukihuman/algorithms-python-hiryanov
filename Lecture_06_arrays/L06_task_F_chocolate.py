@@ -72,12 +72,15 @@ def chocolate(height):
     return current
 
 
-# Cathes height from the input.
-height = int(input())
+# Executes only if runs as a script.
+if __name__ == '__main__':
 
-# Calculates the amount of ways there is to divide the chocolate with
-# the height from the input.
-ways_amount = chocolate(height)
+    # Cathes height from the input.
+    height = int(input())
 
-# Prints the answer.
-print(ways_amount)
+    # Calculates the amount of ways there is to divide the chocolate with
+    # the height from the input.
+    ways_amount = chocolate(height)
+
+    # Prints the answer.
+    print(ways_amount)

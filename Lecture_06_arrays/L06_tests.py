@@ -1,5 +1,6 @@
 from L06_task_A_circle_affiliation import circle_affiliation
 from L06_task_B_bank_deposit import bank_deposit
+from L06_task_F_chocolate import chocolate
 
 print('\n', 'Testing the tasks of Lecture 06:', '\n', sep='')
 
@@ -43,6 +44,24 @@ deposit, percent, target = 1000, 10, 1000000
 result = 73
 print('OK' if bank_deposit(deposit, percent, target) == result
       else 'Fail')
+print('')
+
+
+print('Task F. Chocolate:')
+print('Test 1: ', end='')
+height = 2
+result = 3
+print('OK' if chocolate(height) == result else 'Fail', end='    ')
+
+print('Test 1: ', end='')
+height = 6
+result = 41
+print('OK' if chocolate(height) == result else 'Fail', end='    ')
+
+print('Test 1: ', end='')
+height = 10
+result = 571
+print('OK' if chocolate(height) == result else 'Fail', end='    ')
 print('')
 
 

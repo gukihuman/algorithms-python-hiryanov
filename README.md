@@ -23,7 +23,7 @@ Online contest tasks was made for 737 and 738 groups of the course.
 This is only available option for remote learning.
 
 Don't worry about additional files or directories like "pyrob" or "graphics.py".  
-These are the modules required for the code of answers.
+These are the modules required for the answers' code.
 
 Most of the answers are written as one whole function.  
 You can put them in another file as module.  
@@ -45,6 +45,16 @@ There is no tests for them too. Only contest online-test.
 Sometimes files from different lectures are opened at the same time.  
 Names of the files starts from the number of the lecture, e.g. "L01".  
 It's been made for the better navigate purpose.
+
+---
+
+_The files' managment is changing.  
+The information below still works for some files.  
+Though I'm merging files with and without "upload" suffix.  
+In the near future, there will not be "upload" files anymore.  
+All files will be able to upload and to be tested as well.  
+If there is no "upload" or "upload_only" files,  
+then the main file is ready to be uploaded itself._
 
 Files with "upload" suffix have been written to send it in the course-testing site.  
 This files contains additional code below the main.  
