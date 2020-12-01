@@ -1,0 +1,38 @@
+import turtle
+
+def mink(l, n):
+    if n == 0:
+        turtle.forward(l)
+        turtle.left(90)
+        turtle.forward(l)
+        turtle.right(90)
+        turtle.forward(l)
+        turtle.right(90)
+        turtle.forward(l * 2)
+        turtle.left(90)
+        turtle.forward(l)
+        turtle.left(90)
+        turtle.forward(l)
+        turtle.right(90)
+        turtle.forward(l)
+        return
+    mink(l/4, n-1)
+    turtle.left(90)
+    mink(l/4, n-1)
+    turtle.right(90)
+    mink(l/4, n-1)
+    turtle.right(90)
+    mink(l/4, n-1)
+    mink(l/4, n-1)
+    turtle.left(90)
+    mink(l/4, n-1)
+    turtle.left(90)
+    mink(l/4, n-1)
+    turtle.right(90)
+    mink(l/4, n-1)
+
+turtle.penup()
+turtle.goto(-275,0)
+turtle.pendown()
+turtle.speed('fastest')
+mink(150, 2)
