@@ -1,6 +1,40 @@
-# algorithms-python-Hiryanov
+### **ATTENTION !!!**
 
-#### Answers for the course: "Algorithms and data structure at Python" _by Timofey Hiryanov 2017-2018._
+### This is a scratch with a dirty brutal force code.
+
+### I truly regret that I didn't write clean code from the start.
+
+### This version of repository exists for a historical purpose.
+
+### Also it may be useful untill the main version is behind.
+
+---
+
+_(Actually in this version I already have started to rewrite the code.  
+I did rewriting up to lecture 06 and then I take some pause starting  
+to study different things like GIT and command line. Going back to  
+this course I realize I did too many unnecessary comments in the  
+new rewritten code. So I start to rewrite again. And not just  
+removing foolish comments, but also working on readability. Also  
+I'v learned GIT pretty well. So I put all my previous work in a  
+separate unconnected tag. This is where you are right now, if you  
+see this text. You can look at some code here and make fun of me.  
+I continue to work on rewriting and making new lectures at public  
+branches of this repository.)_
+
+Here is an old readme below (so many unnecessary things):
+
+---
+
+---
+
+---
+
+## algorithms-python-Hiryanov
+
+#### Answers for the course: "Algorithms and data structure at Python"
+
+_by Timofey Hiryanov 2017-2018._
 
 ##### `[work in progress]`
 
